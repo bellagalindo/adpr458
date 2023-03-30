@@ -1,4 +1,4 @@
-:root {
+/*:root {
     --primary_color: #033f5f;
     --seconday_color: #007CBC;
     --highlight_color: #F5BA36;
@@ -21,12 +21,14 @@ h3{
 }
 p {
     color: var(--neutral_grey);
-}
+}*/
 img {
     max-width: 100%; /* This makes all your images responsive */
 }
-
-
+.spacer {
+    margin-top: 5rem;
+}
+/*
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -39,7 +41,7 @@ img {
 /* Media Queries for larger screens than 768px */
 @media screen and (min-width: 48rem) {
    
-   .col-span-2 {
+   /*/.col-span-2 {
         grid-column: span 2;
    }
    .col-span-3 {
@@ -65,6 +67,177 @@ img {
    }
    .col-span-10 {
         grid-column: span 10;
+    }*/
+
+}
+
+
+
+
+    
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-} /* Closes the media query */
+    h1 {
+        font-size: 17px;
+        color: black;
+        font-weight:bold;
+    }
+
+    h2 {
+        font-size: 14px;
+        color: black;
+        font-weight:bold;
+    }
+
+    h3 {
+        font-size: 12px;
+        font-weight: lighter;
+    }
+
+    h4 {
+        font-size: 8px;
+        font-weight: bold;
+    }
+    
+    h5 {
+        font-size: 12px;
+        font-weight: lighter;
+        color: gray;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: white;
+    }
+    
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 11px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: light grey;
+    }
+    
+    /* .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    } */
+
+    a:hover {
+        color: grey;
+        text-decoration: none;
+    }
+
+    .container { 
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.5rem;
+        margin: 0 auto;
+        width: min(95%, 75rem);
+    }
+
+    .container > * {
+        grid-column: span 12;
+    }
+    
+
+    .button {
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      
+    .button2 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #008CBA;
+        max-width: 85pt;
+        max-height: 50pt;
+      }
+      
+    .button2:hover {
+        background-color: #008CBA;
+        color: white;
+      }
+
+      .button2 {
+        width: 85pt;
+        height: 50pt;
+        border-radius: 8px;
+        padding-left: 6pt;
+        padding-right: 6pt;
+        padding-top: 7pt;
+        padding-bottom: 7pt;
+    }
+
+      .button4 {
+        background-color: white;
+        color: black;
+        border: 2px solid #e7e7e7;
+        width: 85pt;
+        height: 50pt;
+        padding-left: 6pt;
+        padding-right: 6pt;
+        padding-top: 7pt;
+        padding-bottom: 7pt;
+      }
+      .button4:hover {
+        background-color: #e7e7e7;
+    }
+    .button4 {
+        border-radius: 8px;
+    }
+
+    .button5 {
+        border-radius: 8px;
+        width: 100pt;
+        height: 25pt;
+        border-radius: 8px;
+        padding-left: 6pt;
+        padding-right: 6pt;
+        padding-top: 7pt;
+        padding-bottom: 7pt;
+        background-color: #008CBA;  
+        border: none;
+        font-size: 10pt;
+      }
+      .button5:hover {
+        background-color: #005977;
+        color: white;
+      }
+
+
+    /* Desktop Layout */
+    @media screen and (min-width: 40rem) {
+        .col-span-4 {
+            grid-column: span 4;
+        }
+        .col-span-6 {
+            grid-column: span 6;
+        }
+        .col-span-12 {
+            grid-column: span 12;
+        }
+
+
+
+
+
+} 
+/* Closes the media query */
