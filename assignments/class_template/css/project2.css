@@ -81,15 +81,15 @@ img {
     }
 
     h1 {
-        font-size: 17px;
+        font-size: 16px;
         color: black;
-        font-weight:bold;
+        font-weight:lighter;
     }
 
     h2 {
         font-size: 14px;
         color: black;
-        font-weight:bold;
+        font-weight:thinnner;
     }
 
     h3 {
@@ -106,6 +106,14 @@ img {
         font-size: 12px;
         font-weight: lighter;
         color: gray;
+    }
+
+    h6 {
+        font-size: 12px;
+        font-weight: lighter;
+        color: #008CBA;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     .topnav {
@@ -137,6 +145,14 @@ img {
         text-decoration: none;
     }
 
+    .greybar {
+        height: 80px;
+        background-color: #ddd;
+        width: 100%;
+        width: 4000px;
+        margin-left: -60px;
+    }
+
     .container { 
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -149,6 +165,82 @@ img {
         grid-column: span 12;
     }
     
+    .lineheight1 {
+        line-height: 1px;
+        padding: 0px;
+        margin-top: -20px;
+        margin-bottom: 5px;
+    }
+    
+    .lineheight2 {
+        line-height: 0px;
+        padding: 0px;
+        margin-top: -35px;
+    }
+
+    .lineheight3 {
+        line-height: 0px;
+        padding: 0px;
+        margin-top: -35px;
+    }
+
+    .lineheight4 {
+        line-height: 1px;
+        padding: 0px;
+        margin-top: -30px;
+        margin-bottom: 5px;
+    }
+
+    .lineheight5 {
+        line-height: 1px;
+        padding: 0px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .lineheight6 {
+        line-height: 50px;
+        padding: 0px;
+        margin-top: 5px;
+        margin-bottom: -22px;
+    }
+
+    .dot1 {
+        height: 20px;
+        width: 20px;
+        background-color: brown;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: -40px;
+        margin-right: 2px;
+      }
+      
+      .outline {
+        outline: #008CBA solid 2px;
+        border-radius: 50%;
+        outline-offset: 2px;
+        border-style: none;
+        }
+
+      .dot2 {
+        height: 20px;
+        width: 20px;
+        background-color: grey;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: -40px;
+        margin-right: 2px;
+      }
+
+      .dot3 {
+        height: 20px;
+        width: 20px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: -40px;
+        margin-right: 2px;
+      }
 
     .button {
         border: none;
@@ -222,11 +314,15 @@ img {
         color: white;
       }
 
+    
 
     /* Desktop Layout */
     @media screen and (min-width: 40rem) {
         .col-span-4 {
             grid-column: span 4;
+        }
+        .col-span-3 {
+            grid-column: span 3;
         }
         .col-span-6 {
             grid-column: span 6;
