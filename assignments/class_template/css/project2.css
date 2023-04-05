@@ -73,7 +73,17 @@ img {
 
 
 
-
+    .grey {
+         background-color: #ddd;
+         width: 100%;
+         padding-top: 5pt;
+         padding-bottom: 5pt;
+         padding-left: 10pt;
+    }
+    
+    .orangetext {
+        color: rgb(210, 70, 0);
+    }
     
     body {
       margin: 0;
@@ -111,14 +121,26 @@ img {
     h6 {
         font-size: 12px;
         font-weight: lighter;
-        color: #008CBA;
+        color: black;
         margin-bottom: 10px;
         margin-top: 10px;
+    }
+
+   .accessories {
+        font-size: 12px;
+        float: left;
+    }
+
+    .beats {
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
     }
 
     .topnav {
       overflow: hidden;
       background-color: white;
+      justify-content: center;
     }
     
     .topnav a {
@@ -128,6 +150,7 @@ img {
       padding: 14px 16px;
       text-decoration: none;
       font-size: 11px;
+      justify-content: center;
     }
     
     .topnav a:hover {
@@ -140,21 +163,36 @@ img {
       color: white;
     } */
 
+    a:link {
+        text-decoration: none;
+        color: black;
+      }
+
     a:hover {
         color: grey;
         text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: black;
     }
 
     .greybar {
         height: 80px;
         background-color: #ddd;
         width: 100%;
-        width: 4000px;
-        margin-left: -60px;
     }
 
     .container { 
         display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.5rem;
+        margin: 0 auto;
+        width: min(95%, 75rem);
+    }
+
+    .container2 { 
         grid-template-columns: repeat(12, 1fr);
         gap: 1.5rem;
         margin: 0 auto;
@@ -203,6 +241,36 @@ img {
         padding: 0px;
         margin-top: 5px;
         margin-bottom: -22px;
+    }
+
+    .lineheight7 {
+        line-height: 50px;
+        padding: 0px;
+        margin-top: -15px;
+        margin-bottom: -22px;
+    }
+
+    .lineheightpg2 {
+        line-height: 25px;
+        padding: 0px;
+        margin-top: -5px;
+        margin-bottom: -50px;
+    }
+
+    .container_large {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.5rem;
+        margin: 0 auto;
+        width: min(95%, 75rem);
+        margin-top: -16pt;
+        margin-bottom: -10pt;
+        height: 60pt;
+    }
+
+    .outlinegrey {
+        outline: #ddd solid;
+        stroke: 1pt;
     }
 
     .dot1 {
@@ -289,35 +357,111 @@ img {
         padding-top: 7pt;
         padding-bottom: 7pt;
       }
-      .button4:hover {
+      
+    .button4:hover {
         background-color: #e7e7e7;
     }
+
     .button4 {
         border-radius: 8px;
     }
 
     .button5 {
-        border-radius: 8px;
-        width: 100pt;
         height: 25pt;
+        width: 100%;
         border-radius: 8px;
-        padding-left: 6pt;
-        padding-right: 6pt;
         padding-top: 7pt;
         padding-bottom: 7pt;
         background-color: #008CBA;  
         border: none;
         font-size: 10pt;
       }
-      .button5:hover {
+
+    .button5:hover {
         background-color: #005977;
         color: white;
       }
-
     
+    .card {
+        text-align: center;
+        margin: 1rem;
+        margin-left: -28pt;
+        margin-bottom: -28pt;
+        padding-bottom: 2rem;
+        outline: #ddd solid 2pt;
+        padding-left: 10pt;
+        padding-right: 10pt;
+        padding-top: 20pt;
+    }
+
+    .card-title {
+        margin: 0.75rem 0 0 0;
+        padding: 0 2rem 0.5rem;
+    }
+
+    .card-text {
+        margin: 0.5rem 0 1rem 0;
+    }
+
+    .dotpg21 {
+        height: 15px;
+        width: 15px;
+        background-color: brown;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: -40px;
+        margin-right: 2px;
+      }
+
+      .bold {
+        font-weight: bold;
+        margin-bottom: -30pt;
+        margin-left: 3pt;
+        font-size: 10pt;
+        margin-top: -15pt;
+      }
+
+      .bluetext {
+        color: #008CBA;
+      }
+
+      .awesomewebsites {
+        font-size: 20pt;
+        font-weight: bold;
+        color: black;
+      }
+
+      .pink {
+        background-color: pink;
+      }
+      .palegrey {
+        background-color: grey;
+      }
+      .darkgrey {
+        background-color: darkgray;
+      }
+      .navy {
+        background-color: navy;
+      }
+      .black {
+        background-color: black;
+      }
+      .tan {
+        background-color: tan;
+      }
+      .blue {
+        background-color: rgb(18, 239, 255);
+      }
+      .green {
+        background-color: greenyellow;
+      }
+
 
     /* Desktop Layout */
     @media screen and (min-width: 40rem) {
+        .col-span-2 {
+            grid-column: span 2;
+        }
         .col-span-4 {
             grid-column: span 4;
         }
@@ -327,10 +471,21 @@ img {
         .col-span-6 {
             grid-column: span 6;
         }
+        .col-span-10 {
+            grid-column: span 10;
+        }
         .col-span-12 {
             grid-column: span 12;
         }
 
+        .work-section{
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
+        .card {
+            flex-basis: 27.5%;
+        }
 
 
 
