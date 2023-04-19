@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    /*background-image: url("../images/pattern.png");*/
+}
+header {
+    background-color: pink;
+    color: white;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+}
+h1 {
+font-size: 2rem;
+}
+h2 {
+font-size: 1.5rem;
+}
+h3 {
+font-size: 1.25rem;
+}
+img {
+    max-width: 100%;
+    margin-top: 20pt;
+}
+.circle {
+border-radius: 50%;
+border: 5px solid #9abcf8;
+}
+a:link, a:visited {
+    color: #9abcf8;
+    text-decoration: none;
+}
+a:hover {
+    color: #6c94d8;
+    text-decoration: underline;
+}
+
+/******* Layout *********/
+.container {
+    background-color: white;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+   /* width: min(95%, 75rem);*/
+}
+
+.container2 {
+    background-color: white;
+    display: grid;
+    margin: 0 auto;
+}
+
+.container3 {
+    background-color: white;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+}
+
+.container > * {
+    grid-column: span 12;
+    padding-bottom: 15pt;
+}
+
+
+/******* Navigation Using Flexbox *********/
+nav {
+    background-color: pink;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+nav li {
+    margin: 0 0.5rem;
+}
+nav a:link, nav a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+    padding: 1rem;
+    display: block;
+    transition: ease-in-out;
+}
+nav a:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+/******* Components *********/
+.button:link, .button:visited {
+    color: white;
+    background-color: #9abcf8;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+    display: inline-block;
+    margin: 0 .25rem .25rem 0;
+    transition: background-color 0.5s ease;
+}
+.button:hover {
+    background-color: #6c94d8;
+}
+
+.card {
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+}
+.card-title {
+    margin: 0.75rem 0 0 0;
+    padding: 0 2rem 0.5rem;
+}
+.card-text {
+    margin: 0.5rem 0 1rem 0;
+    padding: 0 2rem 0.5rem; 
+}
+.largecard {
+    text-align: center;
+    /* box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15); */
+    margin-bottom: -10pt;
+}
+.halfcard {
+    text-align: center;
+    /* box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15); */
+    margin-bottom: -25pt;
+    column-span: 6;
+    margin-top: 0;
+}
+
+.btn1 {
+    position: absolute;
+    /*top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);*/
+    transform: translate(-190px, 120px);
+    background-color: pink;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .container .btn1:hover {
+    background-color: palevioletred;
+  }
+
+
+
+
+/* Desktop Layout */
+@media screen and (min-width: 40rem) {
+    .col-span-8 {
+        grid-column: span 8;
+    }
+    .col-span-4 {
+        grid-column: span 4;
+    }
+    .col-span-6 {
+        grid-column: span 6;
+    }
+    .col-span-12 {
+        grid-column: span 12;
+    }
+
+
+.work-section{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.card {
+    flex-basis: 27.5%;
+}
+
+}
