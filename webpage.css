@@ -22,22 +22,23 @@ font-size: 1.5rem;
 }
 h3 {
 font-size: 1.25rem;
+font-weight: lighter;
 }
 img {
     max-width: 100%;
     margin-top: 20pt;
+    margin-bottom: 10pt;
 }
 .circle {
 border-radius: 50%;
 border: 5px solid #9abcf8;
 }
 a:link, a:visited {
-    color: #9abcf8;
+    color: none;
     text-decoration: none;
 }
 a:hover {
-    color: #6c94d8;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /******* Layout *********/
@@ -117,6 +118,7 @@ nav a:hover {
 }
 .button:hover {
     background-color: #6c94d8;
+    text-decoration: none;
 }
 
 .card {
@@ -147,42 +149,59 @@ nav a:hover {
 }
 
 .btn1 {
-    position: absolute;
-    /*top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);*/
-    transform: translate(-190px, 120px);
+   /* position: absolute;
+    transform: translate(-190px, 120px);*/
+    position: relative;
     background-color: pink;
     color: white;
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 20px;
+    padding: 10px 30px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    text-align: center;
+  }
+
+  .center1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .container .btn1:hover {
     background-color: palevioletred;
+    text-decoration: none;
   }
 
+  .pinksub {
+    color: pink;
+    margin-bottom: -20pt;
+    font-size: 30px;
+  }
 
+  .darkpink {
+    color: palevioletred;
+    margin-top: 30pt;
+    margin-right: 8pt;
+  }
 
 
 /* Desktop Layout */
 @media screen and (min-width: 40rem) {
     .col-span-8 {
         grid-column: span 8;
+        position: relative;
     }
     .col-span-4 {
         grid-column: span 4;
+        position: relative;
     }
     .col-span-6 {
         grid-column: span 6;
+        position: relative;
     }
     .col-span-12 {
         grid-column: span 12;
+        position: relative;
     }
 
 
