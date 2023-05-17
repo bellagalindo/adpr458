@@ -8,7 +8,7 @@ body {
     /*background-image: url("../images/pattern.png");*/
 }
 header {
-    background-color: palevioletred;
+    background-color: #A22561;
     color: white;
     padding-top: 0rem;
     padding-bottom: 0rem;
@@ -79,7 +79,7 @@ a:hover {
 
 /******* Navigation Using Flexbox *********/
 nav {
-    background-color: palevioletred;
+    background-color: #A22561;
     padding: 0 1rem;
     display: flex;
     justify-content: right;
@@ -158,7 +158,7 @@ nav a:hover {
    /* position: absolute;
     transform: translate(-190px, 120px);*/
     position: relative;
-    background-color: palevioletred;
+    background-color: #A22561;
     color: white;
     font-size: 20px;
     padding: 10px 30px;
@@ -174,18 +174,18 @@ nav a:hover {
   }
 
   .container .btn1:hover {
-    background-color: palevioletred;
+    background-color: #A22561;
     text-decoration: none;
   }
  
   .pinksub {
-    color: palevioletred;
+    color: #A22561;
     margin-bottom: -20pt;
     font-size: 30px;
   }
  
   .darkpink {
-    color: palevioletred;
+    color: #A22561;
     margin-top: 30pt;
     margin-right: 8pt;
   }
